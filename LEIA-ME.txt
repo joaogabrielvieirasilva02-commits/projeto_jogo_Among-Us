@@ -1,0 +1,56 @@
+SUSPEITA NA NAVE — Among Us 3D (Panda3D)
+========================================
+
+PROJETO
+Protótipo 3D single-player inspirado em jogos de tripulação espacial.
+O cenário, personagens, terminais e objetos são gerados por código.
+Não precisa baixar modelos 3D, texturas ou abrir Blender.
+
+REQUISITOS
+- Windows 10 ou 11
+- Python 3.10 a 3.13
+- VS Code (opcional, recomendado)
+
+INSTALAÇÃO NO WINDOWS
+1. Extraia o ZIP.
+2. Abra a pasta AMONG_US_PANDA3D_2 no VS Code.
+3. Abra Terminal > Novo Terminal.
+4. Execute:
+
+   python -m venv .venv
+   .venv\Scripts\python.exe -m pip install --upgrade pip
+   .venv\Scripts\python.exe -m pip install -r requirements.txt
+   .venv\Scripts\python.exe main.py
+
+Se o comando python não funcionar, tente py no lugar de python.
+
+CONTROLES
+WASD     mover
+E        interagir com terminal (mantenha pressionado durante a tarefa)
+R        convocar reunião uma vez
+ESC      pausar / continuar
+ENTER    iniciar na tela inicial
+1 / 2    atalhos de votação quando a reunião estiver aberta
+
+O QUE TEM NESTA VERSÃO
+- Cenário espacial 3D estilizado criado proceduralmente
+- Personagem do jogador e impostor com visor, mochila e animação simples
+- Quatro terminais e tarefas com barra de progresso
+- Impostor controlado pelo computador que persegue o jogador
+- Reunião e votação simplificada
+- Menu inicial, ajuda, pausa, vitória e derrota
+- Interface HUD e mensagens de perigo
+- Sem dependência de modelos externos
+
+LIMITAÇÕES HONESTAS
+Esta é uma experiência single-player/protótipo local. Não inclui multiplayer
+online, matchmaking, chat, servidores, sistema completo de sabotagens ou
+animações cinematográficas. O botão de votação é uma mecânica simplificada
+para testar o fluxo do jogo.
+
+SOLUÇÃO DE PROBLEMAS
+- Use o main.py que está dentro desta pasta extraída.
+- Não misture arquivos de versões anteriores.
+- Para reinstalar dependências:
+  .venv\Scripts\python.exe -m pip install -r requirements.txt
+- Se aparecer um erro, copie o traceback completo do terminal.
